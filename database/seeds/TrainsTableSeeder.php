@@ -16,11 +16,14 @@ class TrainsTableSeeder extends Seeder
         $train->azienda='Italo';
         $train->stazione_di_partenza='Bologna';
         $train->stazione_di_arrivo='Roma';
-        $train->orario_di_partenza='2022-05-30 18:02:09';
-        $train->orario_di_arrivo='2022-05-31 21:45:00';
-        $train->codice_treno='85';
-        $train->numero_carrozze='25';
+        $train->orario_di_partenza= 18.20;
+        $train->orario_di_arrivo= 21.45;
+        $train->codice_treno=85;
+        $train->numero_carrozze=25;
         $train->in_orario='si';
         $train->cancellato='no';
+
+
+        $train->save();
         }
 }
